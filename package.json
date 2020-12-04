@@ -13,7 +13,7 @@
 	"bugs": {
 		"url": "http://github.com/robertdimarco/passport-google-token/issues"
 	},
-	"main": "./lib/passport-google-token",
+	"main": "index.js",
 	"types": "index.d.ts",
 	"dependencies": {
 		"mocha": "^8.2.1",
