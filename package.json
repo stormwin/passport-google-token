@@ -1,27 +1,46 @@
 {
-  "name": "passport-google-token",
-  "version": "0.1.2",
-  "description": "Google token authentication strategy for Passport.",
-  "author": {
-    "name": "Rob DiMarco",
-    "email": "dimarco.robert@gmail.com"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/robertdimarco/passport-google-token.git"
-  },
-  "bugs": {
-    "url": "http://github.com/robertdimarco/passport-google-token/issues"
-  },
-  "main": "./lib/passport-google-token",
-  "dependencies": {
-    "pkginfo": "0.2.x",
-    "passport-oauth": "^1.0.0"
-  },
-  "engines": { "node": ">= 0.4.0" },
-  "licenses": [ {
-    "type": "MIT",
-    "url": "http://www.opensource.org/licenses/MIT" 
-  } ],
-  "keywords": ["passport", "google", "auth", "authn", "authentication", "identity"]
+	"name": "passport-google-token",
+	"version": "1.0.0",
+	"description": "Google token authentication strategy for Passport.",
+	"author": {
+		"name": "Rob DiMarco",
+		"email": "dimarco.robert@gmail.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/robertdimarco/passport-google-token.git"
+	},
+	"bugs": {
+		"url": "http://github.com/robertdimarco/passport-google-token/issues"
+	},
+	"main": "./lib/passport-google-token",
+	"dependencies": {
+		"mocha": "^8.2.1",
+		"passport-oauth": "^1.0.0"
+	},
+	"engines": {
+		"node": ">= 12.0.0"
+	},
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "http://www.opensource.org/licenses/MIT"
+		}
+	],
+	"keywords": [
+		"passport",
+		"google",
+		"auth",
+		"authn",
+		"authentication",
+		"identity"
+	],
+	"devDependencies": {
+		"eslint": "^7.14.0",
+		"prettier": "^2.2.1",
+		"eslint-config-prettier": "^6.15.0",
+		"eslint-plugin-mocha": "^8.0.0",
+		"mocha": "^8.2.1",
+		"prettier-eslint": "^12.0.0"
+	}
 }

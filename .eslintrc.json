@@ -1,0 +1,42 @@
+{
+    "env": {
+        "commonjs": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": [
+		"eslint:recommended",
+		"plugin:mocha/recommended",
+		"prettier"
+	],
+    "parserOptions": {
+        "ecmaVersion": 12
+    },
+    "rules": {
+        "indent": [
+			"error",
+			"tab",
+			{
+				"SwitchCase": 1
+			}
+		],
+		"linebreak-style": ["error", "unix"],
+		"quotes": ["error", "single"],
+		"semi": ["error", "always"],
+		"strict": "error",
+		"array-callback-return": "error",
+		"block-scoped-var": "error",
+		"class-methods-use-this": "warn",
+		"curly": ["error", "all"],
+		"eqeqeq": ["error", "always"],
+		"no-constructor-return": "error",
+		"no-implicit-coercion": [
+			"error",
+			{
+				"boolean": true,
+				"number": true,
+				"string": true
+			}
+		]
+    }
+}
