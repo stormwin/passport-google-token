@@ -68,12 +68,12 @@ module.exports = class GoogleTokenStrategy extends OAuth2Strategy {
 		const accessToken = req.body.access_token || req.query.access_token || req.headers.access_token;
 		const refreshToken = req.body.refresh_token || req.query.refresh_token || req.headers.refresh_token;
 
-		this.loadUserProfile(accessToken, function (err, profile) {
+		this.loadUserProfile(accessToken, (err, profile) => {
 			if (err) {
 				return this.fail(err);
 			}
 
-			function verified(err, user, info) {
+			const verified = (err, user, info) => {
 				if (err) {
 					return this.error(err);
 				}
@@ -83,7 +83,7 @@ module.exports = class GoogleTokenStrategy extends OAuth2Strategy {
 				}
 
 				this.success(user, info);
-			}
+			};
 
 			if (this._passReqToCallback) {
 				this.verify(req, accessToken, refreshToken, profile, verified);
@@ -126,10 +126,10 @@ module.exports = class GoogleTokenStrategy extends OAuth2Strategy {
 						middleName: json.middle_name,
 					},
 					gender: json.gender,
-					emails: [{value: json.email}],
-					photos: [{value: json.picture }],
+					emails: [{ value: json.email }],
+					photos: [{ value: json.picture }],
 					_json: json,
-					_raw: body
+					_raw: body,
 				};
 
 				done(null, profile);

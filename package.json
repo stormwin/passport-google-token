@@ -1,6 +1,6 @@
 {
 	"name": "passport-google-token",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Google token authentication strategy for Passport.",
 	"author": {
 		"name": "Rob DiMarco",
@@ -37,11 +37,11 @@
 		"identity"
 	],
 	"devDependencies": {
-		"eslint": "^7.14.0",
-		"prettier": "^2.2.1",
-		"eslint-config-prettier": "^6.15.0",
+		"eslint": "^7.15.0",
+		"eslint-config-prettier": "^7.0.0",
 		"eslint-plugin-mocha": "^8.0.0",
 		"mocha": "^8.2.1",
+		"prettier": "^2.2.1",
 		"prettier-eslint": "^12.0.0"
 	}
 }
